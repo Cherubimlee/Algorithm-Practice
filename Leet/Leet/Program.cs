@@ -20,21 +20,21 @@ namespace Leet
 
             //if(s!=null)
 
-            //ListNode l1 = new ListNode(5) ;
+            ListNode l1 = new ListNode(3){next = new ListNode(5)} ;
 
-            //ListNode l2 = new ListNode(1) { next = new ListNode(2) { next = new ListNode(4) } };
-            //var s = solution.AddTwoNumbers(l1, l2);
+            //ListNode l2 = new ListNode(1) { next = new ListNode(2) { next = new ListNode(3){ next = new ListNode(4) { next = new ListNode(5)}} } };
+            var s = solution.ReverseBetween(l1, 1, 2);
 
-            //while (s.next != null)
-            //{
-            //    Console.Write(s.val + "=>");
-            //    s = s.next;
-            //}
+            while (s.next != null)
+            {
+                Console.Write(s.val + "=>");
+                s = s.next;
+            }
 
 
-            var num = new int[] { -4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6};
+            //var num = new int[] { -4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6};
 
-            var r = solution.ThreeSum(num);
+            //var r = solution.ThreeSum(num);
 
         }
     }
