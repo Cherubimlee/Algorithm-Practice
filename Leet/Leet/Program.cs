@@ -20,10 +20,10 @@ namespace Leet
 
             //if(s!=null)
 
-            ListNode l1 = new ListNode(3){next = new ListNode(5)} ;
+           ListNode l1 = new ListNode(1){next = new ListNode(2)} ;
 
-            //ListNode l2 = new ListNode(1) { next = new ListNode(2) { next = new ListNode(3){ next = new ListNode(4) { next = new ListNode(5)}} } };
-            var s = solution.ReverseBetween(l1, 1, 2);
+            ListNode l2 = new ListNode(1) { next = new ListNode(2) { next = new ListNode(3){ next = new ListNode(4) } } };
+            var s = solution.ReverseKGroup(l2, 3);
 
             while (s.next != null)
             {

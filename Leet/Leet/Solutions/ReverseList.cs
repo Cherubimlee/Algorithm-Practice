@@ -21,6 +21,37 @@ namespace Leet
         }
 
 
+        public ListNode ReverseKGroup(ListNode head, int k)
+        {
+            if (head == null)
+                return null;
+            
+            ListNode endNode = findNode(head, k-1);
+            ListNode previousStartNode = null;
+            ListNode startNode = head;
+
+            ListNode R = head;
+
+            while(endNode != null)
+            {
+                var newStart = ReverseBetween(startNode, 1, k);
+
+                if (previousStartNode == null)
+                    R = newStart;
+                else
+                    previousStartNode.next = newStart;
+
+                previousStartNode = startNode;
+
+                startNode = startNode.next;
+
+                endNode = startNode == null ? null: findNode(startNode, k-1);
+                    
+            }
+
+            return R;
+        }
+
         public ListNode ReverseBetween(ListNode head, int m, int n)
         {
             ListNode thead, ttile, lhead,ltile;
@@ -35,11 +66,13 @@ namespace Leet
 
             ReverseList(lhead);
 
-            if(thead != null)
+            if (thead != null)
                 thead.next = ltile;
+            else
+                head = ltile;
 
             if (lhead != null)
-            lhead.next = ttile;
+                lhead.next = ttile;
 
             return head;
 
@@ -53,7 +86,11 @@ namespace Leet
             while(n > 0)
             {
                 n--;
-                head = head.next;
+
+                if (head == null)
+                    return null;
+                else
+                    head = head.next;
             }
 
             return head;
