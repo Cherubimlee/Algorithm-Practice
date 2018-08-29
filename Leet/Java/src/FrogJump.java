@@ -6,7 +6,9 @@ public class FrogJump {
 
     public boolean canCross(int[] stones, int startIndex, int steps)
     {
-        
+        if(steps<1)
+        return false;
+
         if(stones.length-1 ==  startIndex)
             return true;
         
