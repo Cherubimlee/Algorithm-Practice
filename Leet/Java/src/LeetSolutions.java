@@ -22,9 +22,15 @@ public class LeetSolutions
     //RomanToInteger i =  new RomanToInteger();
     //i.romanToInt("MCMXCIV");
 
-    int[] stones =  new int[]{0,1,3,5,6,8,12,17};
+    // int[] stones =  new int[]{0,1,3,5,6,8,12,17};
 
-    FrogJump fj =  new FrogJump();
-    fj.canCross(stones);
+    // FrogJump fj =  new FrogJump();
+    // fj.canCross(stones);
+
+    int[] nums =  new int[]{0,1,2,2,3,0,4,2};
+
+    RemoveElement ele = new RemoveElement();
+    ele.removeElement(nums, 2);
+
    }
 }
