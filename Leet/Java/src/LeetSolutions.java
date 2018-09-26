@@ -27,10 +27,22 @@ public class LeetSolutions
     // FrogJump fj =  new FrogJump();
     // fj.canCross(stones);
 
-    int[] nums =  new int[]{0,1,2,2,3,0,4,2};
+    // int[] nums =  new int[]{0,1,2,2,3,0,4,2};
 
-    RemoveElement ele = new RemoveElement();
-    ele.removeElement(nums, 2);
+    // RemoveElement ele = new RemoveElement();
+    // ele.removeElement(nums, 2);
 
+    //MaximumSwap x = new MaximumSwap();
+    //x.maximumSwap(98368);
+
+    ListNode head =  new ListNode(1);
+    head.next =  new ListNode(2);
+    head.next.next = new ListNode(3);
+    head.next.next.next = new ListNode(4);
+    head.next.next.next.next = new ListNode(5);
+
+    ReorderList rl =  new   ReorderList();
+
+    rl.reorderList(head);
    }
 }
