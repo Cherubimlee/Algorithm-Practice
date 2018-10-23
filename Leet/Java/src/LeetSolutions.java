@@ -35,14 +35,13 @@ public class LeetSolutions
     //MaximumSwap x = new MaximumSwap();
     //x.maximumSwap(98368);
 
-    ListNode head =  new ListNode(1);
-    head.next =  new ListNode(2);
-    head.next.next = new ListNode(3);
-    head.next.next.next = new ListNode(4);
-    head.next.next.next.next = new ListNode(5);
+   
 
-    ReorderList rl =  new   ReorderList();
+    MagicDictionary md =  new MagicDictionary();
 
-    rl.reorderList(head);
+    String[] dict = {"hello","leetcode"};
+    md.buildDict(dict);
+    boolean s = md.search("hhelo");
+
    }
 }
