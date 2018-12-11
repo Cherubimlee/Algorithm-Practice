@@ -37,11 +37,37 @@ public class LeetSolutions
 
    
 
-    MagicDictionary md =  new MagicDictionary();
+    // MagicDictionary md =  new MagicDictionary();
 
-    String[] dict = {"hello","leetcode"};
-    md.buildDict(dict);
-    boolean s = md.search("hhelo");
+    // String[] dict = {"hello","leetcode"};
+    // md.buildDict(dict);
+    // boolean s = md.search("hhelo");
+
+    // PermutationInString ps =  new PermutationInString();
+
+    // ps.checkInclusion("ab","eidbaooo");
+
+    // MostCommonWord mw = new MostCommonWord();
+    // mw.mostCommonWord("Bob hit a ball, the hit BALL flew far after it was hit.", new String[]{"hit"});
+
+
+    // LongestUnivaluePath p = new LongestUnivaluePath();
+
+    // TreeNode root = new TreeNode(5);
+    // root.left = new TreeNode(5);
+    // root.right = new TreeNode(5);
+
+    // p.longestUnivaluePath(root);
+
+   swapNodesinPairs sp = new swapNodesinPairs();
+
+
+    ListNode head = new ListNode(1);
+    head.next =  new ListNode(2);
+    head.next.next =  new ListNode(3);
+    head.next.next.next =  new ListNode(4);
+ 
+    sp.swapPairs(head);
 
    }
 }
